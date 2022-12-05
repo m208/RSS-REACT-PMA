@@ -44,7 +44,7 @@ export const ModalForm = ({
   return (
     <>
       <div
-        className='modal-wrapper'
+        className='modal-overlay'
         onClick={modalAbort}
         role='presentation'
         onKeyPress={()=>{ }}
