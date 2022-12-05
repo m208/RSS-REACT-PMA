@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-shadow */
 import { useNavigate } from '@tanstack/react-location';
 import { Draggable, Droppable } from 'react-beautiful-dnd';
 import EasyEdit from 'react-easy-edit';
@@ -26,7 +25,9 @@ interface ColumnProps {
   activeTask: string | null;
 }
 
-export const Column = ({ boardId, column, onDelete, index, activeTask }: ColumnProps): JSX.Element => {
+export const Column = ({
+  boardId, column, onDelete, index, activeTask,
+}: ColumnProps): JSX.Element => {
   const [showModalCreateTask, setShowModalCreateTask] = useState(false);
   const [showModalEditTask, setShowModalEditTask] = useState(false);
   const [editedTask, setEditedTask] = useState<ITask | null>(null);

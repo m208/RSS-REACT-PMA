@@ -42,7 +42,7 @@ export const Task = ({ task, onDelete, onEdit, index }: TaskProps): JSX.Element 
                   }
                 }}
               >
-                {task.title} order: {task.order}
+                {task.title}
               </div>
               <div className="task-buttons">
                 <button

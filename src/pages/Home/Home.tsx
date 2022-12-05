@@ -8,6 +8,7 @@ import photoGirl from './members/girl.png';
 
 import { teamMembers } from '@/app/constants';
 import welcomeImage1 from '@/assets/png/welcome-img.png';
+import welcomePreview from '@/assets/png/welcome-preview.png';
 import welcomeImage2 from '@/assets/png/welcome-section2.png';
 
 const getImg = (name: string) => {
@@ -60,7 +61,8 @@ export const Home = (): JSX.Element => {
             <div className="home-video__inner-wrapper">
               <img src={welcomeImage2} alt="welcome" className='video__img'/>
 
-              <iframe src='https://www.youtube.com/embed/GNrdg3PzpJQ'
+              {/* <iframe src='https://www.youtube.com/embed/GNrdg3PzpJQ' */}
+              <iframe src={welcomePreview}
                 frameBorder='0'
                 allowFullScreen
                 title='video'
